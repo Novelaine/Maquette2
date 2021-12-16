@@ -1,0 +1,413 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body{
+    background-color: rgb(214, 212, 212);
+    max-width: 1600px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+#menu{
+    visibility: hidden;
+    width: 35px;
+}
+#fermer{
+    visibility: hidden;
+    width: 35px;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+header{
+    background-image: url(../img/sdb.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+#logo{
+    width: 7%;
+}
+#navigation{
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+#navigation nav{
+    margin-left: 28%;
+}
+#navigation nav ul{
+    display: flex;
+    list-style:none;
+}
+#navigation a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    padding: 15px;
+}
+#navigation a:hover{
+    background-color: #000;
+    color: #fff;
+    border: #fff 1px solid;
+}
+#titre{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 155px;
+}
+#titre h1{
+    font-size: 25px;
+    font-weight: bold;
+}
+#logo1{
+    width: 12%;
+}
+#titre button{
+    background-color: #000;
+    color: #fff;
+    padding: 10px 31px;
+    margin: 95px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#titre button:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+/****************** Fin header *****************/
+.sousContainer{
+    height: 373px;
+    display: flex;
+}
+.entreprise{
+    background: rgb(255, 255, 255);
+    border-radius: 614px / 81px 25px 37px 60px;
+    position: absolute;
+    top: 693px;
+    left: 0;
+    right: 0;
+}
+#entreprise{
+    width: 36%;
+    padding: 25px;
+    margin: auto;
+    text-align: left;
+}
+#entreprise h2{
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px 0;
+}
+.sousContainer #logo2{
+    margin: auto auto auto 0;
+    width: 21%;
+}
+/****************** Fin 1ere section main *****************/
+#produit{
+    max-width: 1600px;
+    position: absolute;
+    top: 305px;
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+#produit h2{
+    font-size: 35px;
+    font-weight: bold;
+    padding: 15px;
+}
+#produit p{
+    padding-bottom: 70px;
+}
+#produit li{
+    margin: 20px;
+}
+#produit .fas{
+    padding: 15px;
+    margin-right: 129px;
+    text-align: left;
+    align-items: center;
+
+}
+#liste{
+    width: 25%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+#liste ul{
+    display: flex;
+    flex-direction: column;
+}
+/****************** fin 2eme section main *************/
+.contact{
+    background: rgb(255, 255, 255);
+    border-radius: 600px / 40px 27px 0px 0px;
+    position: absolute;
+    padding-bottom: 101px;
+    top: 1764px;
+    right: 0;
+    left: 0;
+}
+.sousContainer1 h2{
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 55px;
+}
+.sousContainer1 p{
+    text-align: center;
+    padding-bottom: 75px;
+    width: 40%;
+    margin: auto;
+}
+#contact{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+#adresse{
+    width: 30%;
+    margin: 0 auto;
+}
+#adresse p{
+    padding-bottom: 45px;
+    text-align: left;
+    width: 100%;
+}
+#adresse h3{
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    margin-top: 15px;
+    padding-bottom: 18px;
+}
+#formulaire{
+    width: 40%;
+    margin: auto;
+}
+#formulaire form{
+    width: 119%;
+}
+#formulaire label{
+    text-transform: uppercase;
+    position: absolute;
+    padding: 5px;
+    margin: 20px;
+    font-weight: bold;
+}
+#formulaire input{
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid rgb(160, 159, 159);
+    padding: 10px;
+    position: relative;
+    text-align: left;
+    margin: 15px;
+}
+#textarea{
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid rgb(160, 159, 159);
+    padding: 10px;
+    text-align: left;
+    margin: 15px;
+}
+#textarea::placeholder{
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+}
+#formulaire button{
+    width: 100%;
+    background-color: #000;
+    padding: 15px;
+   margin-left: 25px;
+   color: #fff;
+   text-transform: uppercase;
+   cursor: pointer;
+}
+#formulaire #checkbox{
+    width: 4%;
+    margin: 63px 10px 0px 0px;
+}
+#formulaire span{
+    font-size: 15px;
+    font-weight: bold;
+}
+/************************ Fin du formulaire ******************/
+footer{
+    position: relative;
+    top: 1816px;
+}
+.container1{
+    max-width: 1599px;
+    margin: 0;
+}
+.container1 img{
+    width: 100%;
+}
+
+#basFooter{
+    background-color: rgb(245, 195, 89);
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+#basFooter p{
+    padding: 10px;
+}
+#basFooter #copy{
+    width: 80%;
+    text-align: center;
+    padding: 10px;
+}
+
+/************************ fin du footer **************************/
+
+@media screen and (max-width: 1291px) {
+    footer{
+        top: 1888px;
+    }
+}
+
+@media screen and (max-width: 1291px) {
+    #produit h2{
+        padding-top: 88px;
+    }
+}
+@media screen and (max-width: 796px) {
+    #menu{
+        visibility: visible;
+        position: absolute;
+        right: 0;
+    }
+    #logo{
+        width: 14%;
+    }
+    #navigation{
+        display: block;
+        text-align: left;
+    }
+    #navigation nav{
+        visibility: hidden;
+    }
+    #navigation nav ul li a{
+        text-align: center;
+    }
+    #navigation nav ul{
+        float: right;
+        flex-direction: column;
+        background-color: grey;
+        padding: 15px;
+    }
+    
+    .sousContainer #logo2{
+        display: none;
+    }
+    footer{
+        top: 1936px;
+    }
+}
+@media screen and (max-width: 618px) {
+    
+    #titre{
+        padding: 85px;
+    }
+    #logo1{
+        display: none;
+    }
+    #titre button{
+        margin: 0;
+    }
+    .entreprise{
+        top: 341px;
+    }
+    .sousContainer{
+        display: block;
+    }
+    #entreprise{
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 5px;
+    }
+    #produit h2{
+        padding-top: 38px;
+    }
+    #produit p{
+        padding-bottom: 16px;
+    }
+    .contact{
+        top: 1389px;
+    }
+    .sousContainer1 p{
+        width: 75%;
+    }
+    #contact{
+        display: block;
+    }
+    #adresse{
+        width: 100%;
+        text-align: center;
+    }
+    #adresse p{
+        text-align: center;
+        padding-bottom: 21px;
+    }
+    #formulaire{
+        width: 60%;
+    }
+    #formulaire form{
+        width: 100%;
+    }
+    #formulaire label{
+        margin: 0;
+    }
+    #formulaire input{
+        margin: 0;
+    }
+    #textarea{
+        margin: 0;
+    }
+    #formulaire span{
+        font-size: 11px;
+    }
+    #formulaire #checkbox{
+        width: 7%;
+    }
+    #formulaire button{
+        margin-left: 12px;
+    }
+    footer{
+        top: 2117px;
+        text-align: left;
+    }
+    #basFooter #copy{
+        width: auto;
+        padding: 0;
+    }
+}
